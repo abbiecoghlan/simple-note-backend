@@ -1,24 +1,13 @@
-# README
+# Simple Note
+A clean and simple, full CRUD notes app that allows users to create and manage text-based notes. 
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+* Rails API backend 
+* React frontend 
+* Redux for global state management 
+* Semantic React UI for styling
 
-Things you may want to cover:
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+#### Instructions for use
+* Fork and clone Frontend and Backend repositories into your local environment. 
+* Open a terminal and cd into the backend folder. Run rails s to launch backend server. 
+* In frontend folder, run npm start to launch front end. Follow the prompts to create account or login. 
