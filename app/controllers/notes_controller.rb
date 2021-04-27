@@ -14,7 +14,6 @@ class NotesController < ApplicationController
     def create
         note = Note.create(note_params)
         render json: { note: NoteSerializer.new(note)}, status: :created
-        # render json: note
     end
 
     def update
