@@ -1,5 +1,5 @@
 class NotesController < ApplicationController
-    skip_before_action :authorized, only: [:create, :index, :show, :update]
+    skip_before_action :authorized, only: [:create, :index, :show, :update, :destroy]
   
     def index
         notes = Note.all
