@@ -12,6 +12,17 @@ skip_before_action :authorized, only: [:create, :index, :show]
     end
   end
 
+  def show 
+
+    @user = current_user 
+    if @user
+      render json: { user: UserSerializer.new(@user) }, status: :accepted
+    else 
+      render json:{ message: "Unable to authorize user"}
+    end 
+  end   
+
+
   private
 
   def user_login_params
